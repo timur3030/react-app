@@ -13,7 +13,6 @@ const PostList = ({ posts, title, remove }) => {
         {posts.map((post, i) => (
           <CSSTransition
             key={post.id}
-            // nodeRef={nodeRef}
             timeout={500}
             classNames="post"
           >

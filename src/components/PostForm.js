@@ -7,7 +7,6 @@ const PostForm = ({ create }) => {
 
   const addNewPost = (e) => {
     e.preventDefault();
-    // console.log(bodyInputRef.current.value);
     const newPost = {
       ...post,
       id: Date.now(),
@@ -29,7 +28,6 @@ const PostForm = ({ create }) => {
         onChange={(e) => setPost({ ...post, body: e.target.value })}
         type="text"
         placeholder="Описание поста"
-        // ref={bodyInputRef}
       />
       <MyButton onClick={addNewPost}>Создать пост</MyButton>
     </form>
